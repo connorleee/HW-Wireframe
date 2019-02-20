@@ -1,0 +1,65 @@
+body{
+    font-family: 'arial', 'helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    background: #777;
+    width: 960px;
+    font-size: 18px;
+    margin: auto;
+}
+
+header, nav, section, aside, footer{
+    background: #ebebeb;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Container around Section and Aside */
+/* creates a table for the two columns */
+.container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    overflow: hidden;
+    display: table;
+}
+
+/* defines columns */
+section, aside{
+    display: table-cell;
+}
+
+section{
+    width: 495px;
+    padding: 10px;
+}
+
+/* override the header properties but separate from article children */
+.article{
+    color: #ebebeb;
+    background: #777;
+    padding: 10px;
+}
+
+article{
+    background: #777;
+    padding: 10px;
+}
+
+h1, p{
+    color: #777;
+    background: #ebebeb;
+    margin: 10px;
+    padding: 10px;
+}
+
+aside{
+    /* width: 405px;  */
+    /* padding-bottom: 195px; */
+ }
+
+footer{
+    clear: both;
+}
