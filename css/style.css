@@ -12,7 +12,9 @@ header, nav, section, aside, footer{
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-top: 10px;
+}
+
+header{
     margin-bottom: 10px;
 }
 
@@ -21,19 +23,24 @@ header, nav, section, aside, footer{
 .container{
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;
     overflow: hidden;
-    display: table;
+    margin-top: 10px;
+    display: flex;
+    /* display: table;
+    border-spacing: 20px 0px; */
+    
 }
 
 /* defines columns */
 section, aside{
-    display: table-cell;
+    /* display: table-cell; */
 }
 
 section{
     width: 495px;
     padding: 10px;
+    float: left;
+    margin-right: 20px;
 }
 
 /* override the header properties but separate from article children */
@@ -56,6 +63,11 @@ h1, p{
 }
 
 aside{
+    overflow: auto;
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 100%;
+            
     /* width: 405px;  */
     /* padding-bottom: 195px; */
  }
