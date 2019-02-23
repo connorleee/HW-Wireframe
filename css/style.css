@@ -19,27 +19,22 @@ header{
 }
 
 /* Container around Section and Aside */
-/* creates a table for the two columns */
 .container{
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
     margin-top: 10px;
     display: flex;
-    /* display: table;
-    border-spacing: 20px 0px; */
-    
 }
 
-/* defines columns */
+
 section, aside{
-    /* display: table-cell; */
+    float: left;
 }
 
 section{
     width: 495px;
     padding: 10px;
-    float: left;
     margin-right: 20px;
 }
 
@@ -64,14 +59,17 @@ h1, p{
 
 aside{
     overflow: auto;
-    margin-left: 10px;
     padding-top: 10px;
-    width: 100%;
-            
-    /* width: 405px;  */
-    /* padding-bottom: 195px; */
+    width: 445px;
  }
 
-footer{
+/* clearfix hack to clear all floats */
+/* .clearfix::after{
+    content: "";
+    display: block;
     clear: both;
+} */
+
+footer{
+    margin-top: 10px;
 }
